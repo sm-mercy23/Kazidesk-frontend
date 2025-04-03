@@ -1,0 +1,182 @@
+import React from "react";
+import Link from "next/link";
+
+const AppFooter: React.FC = () => {
+  return (
+    <footer className="bg-[#4F1919] flex min-h-[791px] w-full flex-col overflow-hidden px-16 py-11 max-md:max-w-full max-md:px-5">
+      <div className="flex min-h-[43px] gap-2.5 py-2.5 max-md:max-w-full" />
+      <div className="grid gap-2 auto-rows-max justify-center place-items-center w-[95%]  px-5 max-w-full  mt-[95px] max-md:mt-10">
+        <div className="justify-between flex  text-white flex-wrap max-md:max-w-full">
+          <div className="self-stretch min-w-60 font-normal w-[25%] my-auto">
+            <div className="flex  max-w-full flex-col text-[40px] whitespace-nowrap text-center leading-[1.1]">
+              <div className="w-full max-w-[211px]">
+                <div className="flex gap-3">
+                  <img
+                   src="/auth/icons/logo.png"
+
+                    alt="KaziDesk Logo"
+                    className="aspect-[1] object-contain w-10 shrink-0"
+                  />
+                  <div>Kazidesk</div>
+                </div>
+              </div>
+            </div>
+            <div className="self-stretch flex-1 shrink basis-[0%] w-full gap-2.5  leading-6 p-2.5">
+              At KaziDesk, we don't just organize tasks—we unlock productivity.
+              With simplicity, collaboration, and efficiency at our core, we
+              deliver a workspace solution that streamlines workflows, connects
+              teams, and paves the way for a smoother, smarter workday for
+              everyone
+            </div>
+          </div>
+          <div className=" flex  w-max gap-[40px_95px] text-base leading-[1.2] flex-wrap my-auto max-md:max-w-full">
+            <div className="grid auto-rows-max gap-2">
+              <div className="max-w-full  whitespace-nowrap">
+                <div>
+                  <div className="font-semibold">Company</div>
+                  <nav className="w-full font-normal mt-[31px]">
+                    <Link href="/about" className="block">
+                      about
+                    </Link>
+                    <Link href="/products" className="block mt-2.5">
+                      products
+                    </Link>
+                    <Link href="/services" className="block mt-2.5">
+                      services
+                    </Link>
+                    <Link href="/projects" className="block mt-2.5">
+                      projects
+                    </Link>
+                    <Link href="/newsroom" className="block mt-2.5">
+                      newsroom
+                    </Link>
+                  </nav>
+                </div>
+              </div>
+              <div className="max-w-full w-[193px] mt-[55px] max-md:mt-10">
+                <div>
+                  <div className="font-semibold">Services</div>
+                  <nav className="w-full font-normal mt-[31px]">
+                    <Link href="/services" className="block">
+                      our services
+                    </Link>
+                    <Link href="/projects" className="block mt-2.5">
+                      projects
+                    </Link>
+                    <Link href="/consultation" className="block mt-2.5">
+                      consultation
+                    </Link>
+                    <Link href="/request-service" className="block mt-2.5">
+                      request a service
+                    </Link>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div className="w-[193px]">
+              <div className="max-w-full w-[193px]">
+                <div>
+                  <div className="font-semibold">legal & compliance</div>
+                  <nav className="w-full font-normal mt-[31px]">
+                    <Link href="/privacy" className="block">
+                      privacy policy
+                    </Link>
+                    <Link href="/terms" className="block mt-2.5">
+                      terms & conditions
+                    </Link>
+                    <Link href="/cookies" className="block mt-2.5">
+                      cookies policy
+                    </Link>
+                    <Link href="/certifications" className="block mt-2.5">
+                      certifications
+                    </Link>
+                  </nav>
+                </div>
+              </div>
+              <div className="max-w-full w-[193px] mt-[55px] max-md:mt-10">
+                <div>
+                  <div className="font-semibold">Resources & Insights</div>
+                  <nav className="flex w-full flex-col items-stretch font-normal mt-[31px]">
+                    <Link href="/investors" className="block">
+                      Investors
+                    </Link>
+                    <Link href="/partnership" className="text-center mt-2.5">
+                      partnership opportunities
+                    </Link>
+                    <Link href="/quote" className="block mt-2.5">
+                      request a quote
+                    </Link>
+                    <Link href="/projects" className="block mt-2.5">
+                      projects
+                    </Link>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex w-full justify-between items-center gap-2 flex-wrap mt-[125px] max-md:max-w-full max-md:mt-10">
+         
+
+          <Link
+            href="/privacy"
+            className="self-stretch gap-2.5 text-white  text-center leading-[1.2] my-auto p-2.5"
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            href="/terms"
+            className="self-stretch gap-2.5  text-white  text-center leading-[1.2] my-auto p-2.5"
+          >
+            Terms & Conditions
+          </Link>
+          <div className="self-stretch min-w-60 gap-2.5  text-white  text-center leading-[1.2] my-auto p-2.5">
+            © 2025 KaziDesk, Inc. All rights reserved.
+          </div>
+         
+          <div className="self-stretch w-max flex items-center gap-2 my-auto">
+            <a href="https://facebook.com" aria-label="Facebook">
+              <img
+                src="/auth/icons/facebook.png"
+                alt="Facebook"
+                className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+              />
+            </a>
+            {}
+            <a href="https://twitter.com" aria-label="Twitter">
+              <img
+                  src="/auth/icons/twitter.png"
+                alt="Twitter"
+                className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+              />
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+              <img
+                 src="/auth/icons/instagram.png"
+                alt="Instagram"
+                className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+              />
+            </a>
+            <a href="https://whatsApp.com" aria-label="whatsApp">
+            
+              <img
+                 src="/auth/icons/whatsapp.png"
+                alt="whatsapp"
+                className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+              />
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+              <img
+                  src="/auth/icons/linkedin.png"
+                alt="LinkedIn"
+                className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default AppFooter;
